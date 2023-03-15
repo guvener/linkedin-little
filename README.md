@@ -1,6 +1,5 @@
 # LinkedIn little Text Format Parser JS
-Simple LinkedIn little Text Format Parser in JS
-[LinkedIn little Documentation](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/community-management/shares/little-text-format?view=li-lms-2023-02)
+Simple LinkedIn little Text Format Parser in JS according to [LinkedIn little Documentation](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/community-management/shares/little-text-format?view=li-lms-2023-02)
 
 ```js
 (new LinkedinLittle).findHashtags(`Haltet euch fest, oder lasst euch durch uns unterstützen.\n\n{hashtag|\\#|gartenbau} {hashtag|\\#|menzimuck} {hashtag|\\#|zürichoberland}`);
