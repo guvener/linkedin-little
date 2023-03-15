@@ -42,8 +42,7 @@ class LinkedinLittle {
     findMentions(str) {
         let results = [];
         if(!str) return results;
-
-        const regex = /@\[([^\]]+)\]\((urn:li:(person|organization):\d+)\)/gm;
+        const regex = /@\[([^\]]+)\]\((urn:li:(person|organization):[\\a-zA-Z0-9]+)\)/gm;
 
         let m;
         while ((m = regex.exec(str)) !== null) {
