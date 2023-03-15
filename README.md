@@ -3,8 +3,8 @@ Simple LinkedIn little Text Format Parser in JS
 [LinkedIn little Documentation](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/community-management/shares/little-text-format?view=li-lms-2023-02)
 
 ```js
-(new LinkedinLittle).findHashtags(`💪Haltet euch fest, oder lasst euch durch uns unterstützen.\n\n{hashtag|\\#|gartenbau} {hashtag|\\#|menzimuck} {hashtag|\\#|zürichoberland} {hashtag|\\#|altwegggartenbau}`);
-// @returns:  [ "gartenbau", "menzimuck", "zürichoberland", "altwegggartenbau" ]
+(new LinkedinLittle).findHashtags(`Haltet euch fest, oder lasst euch durch uns unterstützen.\n\n{hashtag|\\#|gartenbau} {hashtag|\\#|menzimuck} {hashtag|\\#|zürichoberland}`);
+// @returns:  [ "gartenbau", "menzimuck", "zürichoberland" ]
 ```
 
 ```js
