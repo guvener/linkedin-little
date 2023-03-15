@@ -1,6 +1,9 @@
 # LinkedIn little Text Format Parser JS
 Simple LinkedIn little Text Format Parser in JS according to [LinkedIn little Documentation](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/community-management/shares/little-text-format?view=li-lms-2023-02)
 
+# Use case:
+Parse Linkedin post's commentary and create links for mentions or hashtags.
+
 ```js
 (new LinkedinLittle).findHashtags(`Haltet euch fest, oder lasst euch durch uns unterstützen.\n\n{hashtag|\\#|gartenbau} {hashtag|\\#|menzimuck} {hashtag|\\#|zürichoberland}`);
 // @returns:  [ "gartenbau", "menzimuck", "zürichoberland" ]
