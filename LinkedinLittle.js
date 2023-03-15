@@ -11,7 +11,7 @@ class LinkedinLittle {
         if(!str) return results;
 
         const regex = /(?<={hashtag\|\\#\|)[^}]+/gm;
-        // Alternative syntax using RegExp constructor
+
         let m;
         while ((m = regex.exec(str)) !== null) {
             // This is necessary to avoid infinite loops with zero-width matches
@@ -44,7 +44,6 @@ class LinkedinLittle {
         if(!str) return results;
 
         const regex = /@\[([^\]]+)\]\((urn:li:(person|organization):\d+)\)/gm;
-        // Alternative syntax using RegExp constructor
 
         let m;
         while ((m = regex.exec(str)) !== null) {
